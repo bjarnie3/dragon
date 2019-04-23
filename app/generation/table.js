@@ -11,7 +11,7 @@ class GenerationTable {
 
                     const generationId = response.rows[0].id;
 
-                    resolve({ generationId })
+                    resolve({ generationId });
                 }
             );
         });  
