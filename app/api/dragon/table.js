@@ -18,6 +18,6 @@ class DragonTable {
                 }
             )
         });
-    }
+    } 
 }
 module.exports = DragonTable;
