@@ -1,4 +1,4 @@
-const pool = require('../../../databasePool')
+const pool = require('../../databasePool')
 
 class DragonTable {
     static storeDragon(dragon) {
@@ -14,7 +14,7 @@ class DragonTable {
 
                     const dragonId = response.rows[0].id;
                     
-                    resolve({ dragon });
+                    resolve({ dragonId });
                 }
             )
         });

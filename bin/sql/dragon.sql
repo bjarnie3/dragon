@@ -1,8 +1,8 @@
-DROP TABLE IF EXISTS dragon;
+DROP TABLE dragon CASCADE;
 CREATE TABLE dragon(
     id SERIAL PRIMARY KEY,
     birthdate TIMESTAMP NOT NULL,
     nickname VARCHAR(64),
     "generationId" INTEGER,
-    FOREIGN KEY("generationId") REFERENCES generation(id)
+    FOREIGN KEY("generationId") REFERENCES generation(id) ON DELETE CASCADE
 );
