@@ -4,7 +4,8 @@ const DragonTable = require('../api/dragon/table');
 const router = new Router();
 
 router.get('/new', (req,res) => {
-    res.json({ dragon: req.app.locals.engine.generation.newDragon() });
+    const dragon = req.app.locals.engine.generation.newDragon();
+    //res.json({ dragon: req.app.locals.engine.generation.newDragon() });
 
     DragonTable.storeDragon(dragon)
     .then(({ dragonId }) => {
