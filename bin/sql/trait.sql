@@ -1,4 +1,4 @@
-DROP TABLE trait CASCADE;
+/* DROP TABLE trait CASCADE;*/
 CREATE TABLE trait(
     id SERIAL PRIMARY KEY,
     "traitType" VARCHAR NOT NULL,

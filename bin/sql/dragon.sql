@@ -1,4 +1,4 @@
-DROP TABLE dragon CASCADE;
+/* DROP TABLE dragon CASCADE; */
 CREATE TABLE dragon(
     id SERIAL PRIMARY KEY,
     birthdate TIMESTAMP NOT NULL,
