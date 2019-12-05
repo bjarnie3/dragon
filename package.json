@@ -8,15 +8,19 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "nodemon": "^1.18.11",
     "pg": "^7.9.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
   "scripts": {
     "start": "node ./bin/server",
     "dev": "nodemon ./bin/server",
+    "configure - byr til töfluna": "byr til töfluna",
     "configure": "./bin/configure_db.sh",
     "configure-dev": "npm run configure && npm run dev",
+    "configurePC": "sh ./bin/configure_db.sh",
+    "configurePC-dev": "npm run configurePC && npm run dev",
     "databasePool": "./node_modules/nodemon/bin/nodemon.js databasePool.js"
   },
   "author": "",
