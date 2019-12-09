@@ -1,6 +1,6 @@
 const {Pool} = require('pg')
 
-const databaseConfiguration = require('./secrets/databaseConfiguration');
+const databaseConfiguration = require('./secret/databaseConfiguration');
 
 const pool = new Pool(databaseConfiguration);
 

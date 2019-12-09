@@ -1,22 +1,14 @@
 {
-  "name": "section-1-2",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "bin": {
-    "section-1-2": "server.js"
-  },
-  "dependencies": {
-    "express": "^4.16.4",
-    "pg": "^7.9.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.4"
+    "backend": "server.js"
   },
   "scripts": {
     "start": "node ./bin/server",
     "dev": "nodemon ./bin/server",
-    "configure - byr til töfluna": "byr til töfluna",
     "configure": "./bin/configure_db.sh",
     "configure-dev": "npm run configure && npm run dev",
     "configurePC": "sh ./bin/configure_db.sh",
@@ -24,5 +16,12 @@
     "databasePool": "./node_modules/nodemon/bin/nodemon.js databasePool.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^7.12.1"
+  }
 }
