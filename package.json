@@ -13,7 +13,8 @@
     "configure-dev": "npm run configure && npm run dev",
     "configurePC": "sh ./bin/configure_db.sh",
     "configurePC-dev": "npm run configurePC && npm run dev",
-    "databasePool": "./node_modules/nodemon/bin/nodemon.js databasePool.js"
+    "databasePool": "./node_modules/nodemon/bin/nodemon.js databasePool.js",
+    "traittable": "node app/trait/table.js"
   },
   "author": "",
   "license": "ISC",
