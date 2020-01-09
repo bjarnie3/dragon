@@ -1,4 +1,12 @@
 {
-    "presets": ["env", "react"],
-    "plugins": ["@babel/plugin-proposal-object-rest-spread"] // there may be other ones to include
+    "presets": [
+        // "env", 
+        // "react",
+        "@babel/preset-env", 
+        "@babel/preset-react" 
+      ],
+      "plugins": [
+        "transform-class-properties", 
+        "@babel/plugin-proposal-object-rest-spread"
+      ]
 }
