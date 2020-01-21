@@ -5,23 +5,14 @@ import { render } from 'react-dom';
 import thunk from 'redux-thunk';
 import Generation from './components/Generation';
 import Dragon from './components/Dragon';
-import { generationReducer } from './reducers';
-import { generationActionCreator } from './actions/generation';
+import rootReducer from './reducers';
 import './index.css';
 
 const store = createStore(
-    generationReducer,
+    rootReducer,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
     applyMiddleware(thunk)
     );
-
-store.subscribe(() => console.log('store state update', store.getState()));
-
-fetch('http://localhost:3000/generation')
-    .then(response => response.json())
-    .then(json => {
-        store.dispatch(generationActionCreator(json.generation))
-    });
 
 render(
     <Provider store={store}>
