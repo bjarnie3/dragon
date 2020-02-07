@@ -1,4 +1,4 @@
-import React from 'react';
+  import React from 'react';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { render } from 'react-dom';
@@ -8,10 +8,14 @@ import Dragon from './components/Dragon';
 import rootReducer from './reducers';
 import './index.css';
 
+// const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+
+
 const store = createStore(
     rootReducer,
     window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
     applyMiddleware(thunk)
+    // composeEnhancer(applyMiddleware(thunk))
     );
 
 render(
