@@ -1,4 +1,6 @@
+
 import { GENERATION } from '../actions/types';
+import fetchStates from './fetchStates';
 
 const DEFAULT_GENERATION = { generationId: '', expiration: '' };
 
